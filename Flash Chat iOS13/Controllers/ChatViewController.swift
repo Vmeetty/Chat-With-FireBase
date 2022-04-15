@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ChatViewController: UIViewController {
 
@@ -19,6 +20,11 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
+        if let user = Auth.auth().currentUser {
+            if let email = user.email {
+                print(email)
+            }
+        }
     }
     
 
