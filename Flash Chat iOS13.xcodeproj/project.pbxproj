@@ -26,6 +26,7 @@
 		CECA44132809C13D000D2FA1 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA44112809C13D000D2FA1 /* MessageCell.swift */; };
 		CECA44142809C13D000D2FA1 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECA44122809C13D000D2FA1 /* MessageCell.xib */; };
 		CECA4416280A167A000D2FA1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA4415280A167A000D2FA1 /* Message.swift */; };
+		CECA4418280A2C05000D2FA1 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA4417280A2C05000D2FA1 /* MessageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CECA44112809C13D000D2FA1 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		CECA44122809C13D000D2FA1 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		CECA4415280A167A000D2FA1 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CECA4417280A2C05000D2FA1 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 		E9634E9F872C2376E69D6A0E /* Pods-Flash Chat iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				CECA440E28098A3A000D2FA1 /* Authentication.swift */,
+				CECA4417280A2C05000D2FA1 /* MessageManager.swift */,
 				CECA4415280A167A000D2FA1 /* Message.swift */,
 			);
 			path = Model;
@@ -284,6 +287,7 @@
 				CECA4416280A167A000D2FA1 /* Message.swift in Sources */,
 				CECA440F28098A3A000D2FA1 /* Authentication.swift in Sources */,
 				CECA44132809C13D000D2FA1 /* MessageCell.swift in Sources */,
+				CECA4418280A2C05000D2FA1 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
