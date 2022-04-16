@@ -42,9 +42,10 @@ class ChatViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = allMessages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier) as! MessageCell
         let currentUser = Auth.auth().currentUser
-        let messageUser = allMessages[indexPath.row].sender
+        let messageUser = message.sender
         if currentUser?.email == messageUser {
             cell.leftImage.isHidden = false
             cell.rightImage.isHidden = true
@@ -57,7 +58,7 @@ class ChatViewController: UIViewController, UITableViewDataSource {
             cell.textMessage.textColor = UIColor.black
         }
         cell.bubbleView.layer.cornerRadius = cell.bubbleView.frame.height / 3
-        cell.textMessage.text = allMessages[indexPath.row].body
+        cell.textMessage.text = message.body
         return cell
     }
     
