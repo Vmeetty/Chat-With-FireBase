@@ -31,6 +31,15 @@ class ChatViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: false)
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    
     
     @IBAction func sendPressed(_ sender: UIButton) {
         manager.addDocument(message: messageTextfield.text)
